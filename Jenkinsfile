@@ -9,9 +9,9 @@ pipeline {
                 bat 'npm install'
             }
         }
-        stage('Build') {
+        stage('Test') {
             steps {
-                bat 'npm start &'
+                bat 'npm test'
             }
         }
     }
